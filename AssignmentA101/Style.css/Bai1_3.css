@@ -1,0 +1,108 @@
+/*Reset CSS*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.group-big {
+    width: 1490px;
+    height: 870px;
+    background-color: rgb(218, 232, 236);
+}
+
+.group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.khung {
+    width: 700px;
+    height: 300px;
+    /* background-color: lightgrey; */
+    margin: 16px 0 0 32px;
+    padding-top: 32px;
+    display: flex;
+    border-radius: 8px;
+}
+
+.lich {
+    width: 200px;
+    height: 100%;
+    background-color: lightcoral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+}
+
+.lich .thu {
+    font-size: 32px;
+    color: linen;
+}
+
+.lich .ngay {
+    font-size: 48px;
+    color: white;
+}
+
+.thongTin {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+}
+
+.thongTin .tieuDe {
+    font-size: 30px;
+    color: tomato;
+    padding: 16px 0 1px 16px;
+}
+
+.thongTin .text {
+    font-size: 36px;
+    color: rgb(38, 39, 39);
+    padding: 16px 0 16px 16px;
+}
+
+.colorBlue {
+    background-color: hotpink;
+}
+
+.colorGreen {
+    background-color: green;
+}
+
+
+/* .input {
+    width: 400px;
+    height: 100px;
+    background-color: green;
+} */
+
+.input .chon {
+    width: 300px;
+    height: 50px;
+    background-color: rgb(218, 232, 236);
+    float: right;
+    margin: 50px 250px 50px 0;
+    border-radius: 32px;
+    border: 2px solid blueviolet;
+}
+
+.input .chon .bttext {
+    font-size: 20px;
+    color: rgb(138, 64, 180);
+}
+
+.input .chon:hover {
+    cursor: pointer;
+}

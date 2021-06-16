@@ -1,0 +1,85 @@
+.full {
+    width: 100%;
+    height: 100%;
+    background: rgb(248, 246, 246);
+}
+
+.wrapper {
+    margin: auto;
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 4px;
+    background-color: hsl(23, 8%, 80%);
+}
+
+.logo>h2 {
+    padding: 0;
+    margin: 20px 0 8px 8px;
+    text-align: center;
+}
+
+.navi {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 4px;
+    background-color: hsl(23, 8%, 80%);
+    text-align: center;
+    font-size: 14px;
+}
+
+.navi>h4 {
+    padding: 0;
+    margin: 8px;
+}
+
+.head {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 4px;
+    background-color: hsl(23, 8%, 80%);
+    text-align: center;
+}
+
+.content {
+    width: 100%;
+    height: 270px;
+    margin: 12px 0 12px 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.content .side {
+    align-items: center;
+    width: 30%;
+    margin-right: 8px;
+    background-color: hsl(23, 8%, 80%);
+}
+
+.content .body {
+    width: 70%;
+    height: 100%;
+    margin-left: 8px;
+    background-color: hsl(23, 8%, 80%);
+}
+
+.footer {
+    width: 100%;
+    height: 30px;
+    background-color: hsl(23, 8%, 80%);
+    text-align: center;
+}
+
+.footer>h4 {
+    margin: 0;
+    padding: 4px;
+}
