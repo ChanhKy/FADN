@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai7.2.6.2</title>
+    <!--JQuery-->
+    <script src="/jquery-3.6.0.min.js"></script>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--font aweasome-->
+    <link rel="stylesheet" href="/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./Bai7-css/Bai7_2-6_2.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="row justify-content-center">ToDo Lists</h1>
+        <div class="row justify-content-center">
+            <section id="tasks">
+                <div class="form">
+                    <div class="form-group d-flex">
+                        <input type="text" class="input-text form-control" placeholder="Name...">
+                        <button class="btn btn-primary " id="add">Add</button>
+                    </div>
+                </div>
+                <ul id="tasks-list">
+                    <li>
+                        <div class="li-group d-flex">
+                            <p>a</p>
+                            <div class="item">
+                                <i class="item-edit fas fa-edit"></i>
+                                <i class="item-remove fas fa-user-times "></i>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <button class="clear-items btn btn-outline-success mt-3">Clear Items</button>
+            </section>
+        </div>
+    </div>
+    <script src="./Bai7-js/Bai7_2-6_2.js"></script>
+</body>
+
+</html>

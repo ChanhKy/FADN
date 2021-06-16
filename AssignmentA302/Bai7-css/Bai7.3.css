@@ -1,0 +1,7 @@
+.fab {
+    height: 50px;
+}
+
+.fab:hover {
+    cursor: pointer;
+}
