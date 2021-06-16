@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Style/Bai3_3.css">
+    <link rel="stylesheet" href="/Day 1/fontawesome-free-5.15.3-web/css/all.min.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row row-th">
+            <div class="col-lg-10  ">
+                <div class="row">
+                    <div class="col-lg-10 row-specific">Specific</div>
+                    <div class="col-lg-2 row-related">Related</div>
+                </div>
+                <div class="row hang1">
+                    <div class="col-lg-3 ">
+                        <form>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">First name contains</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="First name">
+                            </div>
+                    </div>
+
+                    <div class="col-lg-3  ">
+
+                        <form>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Last name contains</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Last name">
+                            </div>
+                    </div>
+
+                    <div class="col-lg-3 ">
+                        <form>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Email contains</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="E-mail">
+                            </div>
+                    </div>
+                    <div class="col-lg-3 ">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Team</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="row hang2">
+                    <div class="col-lg-3 ">
+                        <div class="col-auto my-1 Correspondence hang2-cot1">
+                            <label class="mr-sm-2" for="inlineFormCustomSelect">Correspondence</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                              <option selected>Does'n matter</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="form-row">
+                            <div class="form-group col-lg-5">
+                                <label for="inputDate">Date joined</label>
+                                <input type="type" class="form-control" id="inputEmail4" ">
+                            </div>
+                            <div class="col-lg-2 dau-gach-ngang ">-</div>
+                            <div class="form-group col-lg-5 ">
+                                <label for="inputDate ">              </label>
+                                <input type="type " class="form-control date2 " id="inputPassword4 " ">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 "></div>
+
+
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 row-perssion ">Permission</div>
+                </div>
+                <div class="row ">
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Group</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Permission</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3"></div>
+
+                </div>
+            </div>
+            <div class="col-lg-2 row-atribute">Atribute
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                      Default radio
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                      Second default radio
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                    <label class="form-check-label" for="exampleRadios3">
+                      Disabled radio
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                      Default radio
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                      Second default radio
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                    <label class="form-check-label" for="exampleRadios3">
+                      Disabled radio
+                    </label>
+                </div>
+
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                      Default radio
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                      Second default radio
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                    <label class="form-check-label" for="exampleRadios3">
+                      Disabled radio
+                    </label>
+                </div>
+
+
+            </div>
+
+            <div class="col-lg-12">
+                <div class="footer12">
+                    <a href="#">
+                        <i class="fas fa-repeat-alt"></i>
+                    </a>
+                    <div class="row-cancel">
+                        <button type="button" class="btn btn-light"> 
+                            
+                            Cancel</button>
+                        <button type="button" class="btn btn-secondary"> 
+                            <i class="fas fa-search"></i>/
+                            Search</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>
