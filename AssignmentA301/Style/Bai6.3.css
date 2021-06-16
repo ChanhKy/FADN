@@ -1,0 +1,37 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .container {
+        background-color: cyan;
+        height: 650px;
+    }
+    
+    .group-head {
+        align-items: center;
+        align-content: center;
+    }
+    
+    .group-search {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .input-group-text:hover {
+        cursor: pointer;
+    }
+    
+    .font-weight-bold {
+        font-weight: 700 !important;
+    }
+    
+    .card {
+        height: 240px;
+    }
+    
+    .card-img-top {
+        height: 170px;
+    }

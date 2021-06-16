@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        var user = [{
+            id: 1,
+            first_name: "Eamon",
+            last_name: "Harhoff",
+            email: "eharhoff@imageshack.us",
+            gender: "male",
+            age: 76,
+            salary: 18888
+        }, {
+            id: 2,
+            first_name: "Laney",
+            last_name: "Whittam",
+            email: "Iwhittam1@issuu.com",
+            gender: "Female",
+            age: 42,
+            salary: 15018
+        }, {
+            if: 3,
+            first_name: "Lynett",
+            last_name: "Twinberrow",
+            email: "Iwinberrow2@gov.uk",
+            gender: "Female",
+            age: 99,
+            salary: 13343
+        }]
+
+
+        var result = user.filter(user =>
+            user.gender == "male" &&
+            user.age > 40
+        );
+        console.log(result);
+
+        var arr = Object.values(user);
+        var sum = (accumulator, obj) => accumulator + obj.age;
+        var avg = arr.reduce(sum, 0) / arr.length;
+        console.log(avg);
+    </script>
+</body>
+
+</html>
