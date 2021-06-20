@@ -1,0 +1,76 @@
+.tong {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    order: 1;
+    height: 50px;
+}
+
+.row-header {
+    order: 2;
+    height: 100px;
+}
+
+.row-group {
+    order: 3;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.group-feature {
+    height: 250px;
+}
+
+.feature-signup {
+    height: 50px;
+}
+
+.row-content {
+    order: 4;
+    height: 100px;
+}
+
+@media screen and (min-width:578px) and (max-width:1024px) {
+    .logo {
+        order: 1;
+    }
+    .row-header {
+        order: 2;
+    }
+    .row-content {
+        order: 3;
+    }
+    .row-group {
+        order: 4;
+        height: 100%;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        position: relative;
+    }
+    .group-feature {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .f1 {
+        width: 100%;
+    }
+    .feature-signup {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 50%;
+        height: 42%;
+        background-color: brown;
+    }
+    .sign-up {
+        width: 100%;
+        height: 100%;
+    }
+}
