@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#tasks-list {
+    list-style-type: none;
+}
+
+.li-group {
+    justify-content: space-between;
+    margin: 12px 0 12px 0;
+}
+
+.item-edit {
+    color: blue;
+    margin: 0 4px 0 4px;
+}
+
+.item-edit:hover {
+    cursor: pointer;
+}
+
+.item-remove {
+    color: tomato;
+    margin: 0 4px 0 4px;
+}
+
+.item-remove:hover {
+    cursor: pointer;
+}
