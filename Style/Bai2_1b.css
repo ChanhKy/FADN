@@ -1,0 +1,70 @@
+table,
+th {
+    /* border: 1px solid rgba(0, 0, 0, 0.5); */
+    border-collapse: collapse;
+    width: 80%;
+    height: auto;
+    border: none;
+}
+
+th,
+td {
+    border-bottom: 1px solid #ddd;
+}
+
+.thead {
+    background-color: cornflowerblue;
+    font-weight: 800;
+    color: white;
+    border-style: ;
+}
+
+.tbody {
+    width: 100%;
+    height: 100%;
+    background-color: cyan;
+}
+
+.tr1 {
+    width: 100%;
+    height: 40px;
+}
+
+.th-name {
+    width: 30%;
+    border-top-left-radius: 8px;
+}
+
+.th-age {
+    width: 20%;
+}
+
+.th-job {
+    width: 25%;
+}
+
+.th-local {
+    width: 25%;
+    border-top-right-radius: 8px;
+}
+
+.tr2 {
+    width: 100%;
+    height: 50px;
+    text-align: center
+}
+
+.td-center1 {
+    text-align: start;
+    padding-left: 16px;
+}
+
+.td-center6 {
+    text-align: start;
+    padding-left: 16px;
+    border-bottom-left-radius: 8px;
+}
+
+.td-center9 {
+    border-bottom-right-radius: 8px;
+}
