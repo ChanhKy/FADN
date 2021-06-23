@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Jquery-->
+    <script src="/JQuery/jquery-3.6.0.min.js"></script>
+    <!--Bootstrap-->
+    <script src="/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <!--Font-->
+    <script src="/fontawesome-free-5.15.3-web/js/all.js"></script>
+    <link rel="stylesheet" href="/fontawesome-free-5.15.3-web/css/all.min.css">
+    <!--css-->
+    <link rel="stylesheet" href="/LamLaicau7.3/style.css">
+</head>
+
+<body>
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <div class="col-lg-6">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">First Name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="Nguyen">
+                            <label class="bg-warning text-light d-none "> Định dạng tên nhập vào không đúng </label>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword4">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Chanh Ky">
+                            <label class="bg-warning text-light d-none "> Định dạng tên nhập vào không đúng </label>
+
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="kync6@fsoft.com.vn">
+                            <label class="bg-warning text-light d-none ">Định dạng email nhập vào không đúng </label>
+
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword4">Phone</label>
+                            <input type="text" class="form-control" id="phone" placeholder="0982898712" maxlength="10">
+                            <label class="bg-warning text-light d-none ">Định dạng số điện thoại nhập vào không đúng </label>
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress2">Address</label>
+                        <input type="text" class="form-control" id="address" placeholder="123, Le Duan st">
+                        <label class="bg-warning text-light d-none "> Định dạng địa chỉ nhập vào không đúng </label>
+
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCity">City</label>
+                            <input type="text" class="form-control" id="city" placeholder="Da Nang">
+                            <label class="bg-warning text-light d-none "> Định dạng thành phố nhập vào không đúng </label>
+
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputState">State</label>
+                            <select id="inputState" class="form-control">
+                                <option value="0">Choose...</option>
+                                <option value="vietnam">Viet nam</option>
+                                <option value="lao">Laos</option>
+                                <option value="campuchia">Campuchia</option>
+                            </select>
+                            <label class="bg-warning text-light d-none "> Chọn 1 trong các lựa chọn </label>
+
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputZip">Zip code</label>
+                            <input type="text" class="form-control" id="inputZip" maxlength="5">
+                            <label class="bg-warning text-light d-none "> Zipcode điền vào không đúng </label>
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="checkout form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                          Check me out
+                        </label>
+                        </div>
+                        <label class="bg-warning text-light d-none "> Chọn trước khi đăng kí </label>
+                    </div>
+                    <button type="submit" class="add-btn btn btn-primary">Sign in</button>
+                </form>
+            </div>
+            <div class="col-lg-6">
+                <form>
+                    <div class="form-group">
+                        <label for="inputAddress">Name of card</label>
+                        <input type="text" class="form-control" id="namecard" placeholder="Nguyen Chanh Ky">
+                        <label class="bg-warning text-light d-none "> Định dạng tên thẻ Card không đúng </label>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress2">Credit card number</label>
+                        <input type="text" class="form-control" id="numbercard" placeholder="1111-2222-3333-4444" maxlength="19">
+                        <label class="bg-warning text-light d-none "> Định dạng số Card không đúng </label>
+
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="inputCity">Exp Moth</label>
+                            <input type="text" class="form-control" id="month" placeholder="07" maxlength="2">
+                            <label class="bg-warning text-light d-none "> Ngày nhập vào không đúng  </label>
+
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputCity">Exp Year</label>
+                            <input type="text" class="form-control" id="year" placeholder="2020" maxlength="4">
+                            <label class="bg-warning text-light d-none ">Năm nhập vào không đúng </label>
+
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputCity">Cvv</label>
+                            <input type="text" class="form-control" id="cvv" placeholder="357" maxlength="3">
+                            <label class="bg-warning text-light d-none "> CVV nhập vào không đúng </label>
+
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <table class="table table-responsive table-striped table-dark table-hover mt-4 mb-5">
+                <thead>
+                    <tr>
+                        <th>Full name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Address</th>
+                        <th>City state zipcode</th>
+                        <th>Name on card</th>
+                        <th>Credit card number</th>
+                        <th>Expired</th>
+                        <th>CVV</th>
+                        <th>Card type</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody class="tbody">
+                    <tr>
+                        <td>Nguyen Chanh Ky</td>
+                        <td>kync6@fsoft.com.vn</td>
+                        <td>0982898712</td>
+                        <td>Nguyen Van Linh</td>
+                        <td>Da Nang, Viet Nam, 55555</td>
+                        <td>NguyenKy</td>
+                        <td>1111-2222-3333-4444</td>
+                        <td>1/2021</td>
+                        <td>123</td>
+                        <td>VISA</td>
+                        <td><a class="delete-item btn btn-danger">X</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
