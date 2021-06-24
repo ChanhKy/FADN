@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8H25</title>
+    <script src="/JQuery/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <script src="/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/fontawesome-free-5.15.3-web/css/all.min.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container mt-3">
+        <div class="alert alert-success d-none" role="alert">Thêm dữ liệu thành công</div>
+        <div class="alert alert-danger d-none" role="alert">Xóa dữ liệu thành công</div>
+        <form class="form-row">
+            <div class="col-4">
+                <label class="font-weight-bold">Chọn giải đấu V.League</label>
+                <select class="giaidau form-control">
+                    <option value="">-- Chọn giải đấu --</option>
+                    <option>V.League 1</option>
+                    <option>V.League 2</option>
+                </select>
+                <div class="alert alert-danger d-none" role="alert">Chọn 1 option</div>
+            </div>
+            <div class="col-4">
+                <label class="font-weight-bold">Chọn câu lạc bộ (FC)</label>
+                <select class="clb form-control">
+                    <option value="">-- Chọn FC --</option>
+                </select>
+                <div class="alert alert-danger d-none" role="alert">Chọn 1 option</div>
+            </div>
+            <div class="col-4">
+                <label class="font-weight-bold">Nhập tên cầu thủ</label>
+                <input type="text" class="tencauthu form-control" placeholder="Nhập tên cầu thủ" maxlength="25" minlength="8">
+                <div class="alert alert-danger d-none" role="alert">Chỉ chứa 8 - 25 ký tự</div>
+            </div>
+        </form>
+        <button class="btn-add btn btn-primary mt-3">Add cầu thủ</button>
+
+        <table class="table mt-3 table-bordered">
+            <thead>
+                <tr>
+                    <th>Giải đấu</th>
+                    <th>Câu lạc bộ</th>
+                    <th>Giải đấu</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody class="tbody">
+                <tr>
+                    <td>V.League 1</td>
+                    <td>Hoàng Anh Gia Lai</td>
+                    <td>Tran Minh Thuan</td>
+                    <td style="width: 15%;">
+                        <button class="edit-item btn btn-danger">Edit</button>
+                        <button class="del-item btn btn-danger">Del</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="./cau2.js"></script>
+</body>
+
+</html>
