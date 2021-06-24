@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/JQuery/jquery-3.6.0.min.js"></script>
+    <script src="/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <script src="/fontawesome-free-5.15.3-web/js/all.js"></script>
+    <link rel="stylesheet" href="/fontawesome-free-5.15.3-web/css/all.min.css">
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-9">
+                <h3 class="bg-secondary pl-2 ">Thông tin sản phẩm</h3>
+                <div class="row">
+                    <div class="col-3">
+                        <label>Mã sản phẩm</label>
+                        <input id="maSP" type="text" class="form-control" placeholder="SP0003">
+                        <div class="alert alert-danger d-none" role="alert">SPXXXX</div>
+                    </div>
+
+                    <div class="col-6">
+                        <label>Tên sản phẩm</label>
+                        <input id="tenSanPham" type="text" class="form-control" placeholder="Iphone 4">
+                        <div class="alert alert-danger d-none" role="alert">Chỉ chứa ký tự</div>
+                    </div>
+
+
+
+                    <div class="col-3">
+                        <label>Giá bán</label>
+                        <input id="giaBan" type="text" class="form-control text-right" placeholder="4,050,000">
+                        <div class="alert alert-danger d-none" role="alert">Chỉ chứa số</div>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-3">
+                        <label>Hãng sản xuất</label>
+                        <div class="form-group">
+                            <select class="form-control" id="hangSanXuat">
+                                    <option>Apple</option>
+                                    <option>Samsung</option>
+                                </select>
+                            <div class="alert alert-danger d-none" role="alert">Chỉ chứa ký tự</div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <label>Danh mục sản phẩm</label>
+                        <div class="form-group">
+                            <select class="form-control" id="danhMuc">
+                                </select>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <label>Đơn vị tính</label>
+                        <div class="form-group">
+                            <select class="form-control" id="donViTinh">
+                                    <option>Chiếc</option>
+                                    <option>Đôi</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <label>Số lượng sản phẩm</label>
+                        <input id="soLuong" type="number" class="form-control text-right" placeholder="5">
+                    </div>
+                </div>
+                <button class="btn btn-primary mb-2">Thêm</button>
+            </div>
+            <div class="col-3">
+                <h3 class="bg-secondary pl-2 ">Thông tin thuế</h3>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="tax form-check-input" value="0.1" id="tax1" checked>
+                    <label class="form-check-label" for="tax1">VAT (10%)</label>
+                    <div class="alert alert-danger d-none p-0" role="alert">Phải chọn cái này</div>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="tax form-check-input" value="0.2" id="tax2">
+                    <label class="form-check-label" for="tax2">Dịch vụ loại 1 (20%)</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="tax form-check-input" value="0.05" id="tax3">
+                    <label class="form-check-label" for="tax3">Dịch vụ loại 2 (5%)</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="tax form-check-input" value="0.15" id="tax4">
+                    <label class="form-check-label" for="tax4">Khác (15%)</label>
+                </div>
+            </div>
+        </div>
+        <h3 class="bg-secondary pl-2 pr-2 d-inline">Lưu thông tin sản phẩm</h3>
+        <table class="table table-hover mt-1">
+            <thead>
+                <tr>
+                    <th>Mã SP</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Hãng sản xuất</th>
+                    <th>Danh mục SP</th>
+                    <th>Giá bán</th>
+                    <th>Số lượng</th>
+                    <th>Tiền thuế</th>
+                    <th>Thành tiền</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody class="tbody">
+                <tr>
+                    <td>SP001</td>
+                    <td>Iphone 4</td>
+                    <td>Apple</td>
+                    <td>Điện thoại</td>
+                    <td>1,000,000</td>
+                    <td>2</td>
+                    <td>300,000</td>
+                    <td>1,300,000</td>
+                    <td>
+                        <button class="btn border-danger"><i class="far fa-trash-alt text-danger"></i></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="./main.js"></script>
+</body>
+
+</html>

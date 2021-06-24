@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/JQuery/jquery-3.6.0.min.js"></script>
+    <script src="/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <script src="/fontawesome-free-5.15.3-web/js/all.js"></script>
+    <link rel="stylesheet" href="/fontawesome-free-5.15.3-web/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <form class="col-lg-8">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="email">
+                    <label class="alert alert-warning d-none">Email sai dinh dang</label>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control" id="password">
+                    <label class="alert alert-warning  d-none">password sai dinh dang (chu va so) </label>
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="address" placeholder="address">
+                <label class="alert alert-warning  d-none">Dia chi sai dinh dang</label>
+
+            </div>
+            <div class="form-group">
+                <label for="inputAddress2">Phone</label>
+                <input type="text" class="form-control" id="phone">
+                <label class="alert alert-warning  d-none">Phone sai dinh dang</label>
+
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="city">
+                    <label class="alert alert-warning  d-none">City sai dinh dang</label>
+
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="zip">
+                    <label class="alert alert-warning  d-none">Zipcode sai dinh dang</label>
+
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="check">
+                    <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+                </div>
+                <label class="alert alert-warning  d-none">Check truoc di Sign up</label>
+
+            </div>
+            <button type="submit" class="btn-add btn btn-primary">Sign in</button>
+        </form>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
